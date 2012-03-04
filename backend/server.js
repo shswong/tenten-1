@@ -1,7 +1,7 @@
 var restify = require('restify'); 
 
 var mongo = require('mongoose');
-var db = mongo.connect('mongodb://localhost/tenten')
+//var db = mongo.connect('mongodb://localhost/tenten');
 
 var server = restify.createServer({
   name: 'tenten', 
@@ -13,7 +13,7 @@ server.use(restify.queryParser());
 server.use(restify.bodyParser());
 
 server.get('/echo/:name', function(req, res, next) {
-  res.send(req.params);
+  res.send({"name": "david liman", "email": "limanoit@gmail.com"});
   return next();
 });
 
