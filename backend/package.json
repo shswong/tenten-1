@@ -1,0 +1,11 @@
+{
+  "name": "tenten"
+  , "description": "real time forum engine with node.js and backbone.js"
+  , "version": "0.0.1"
+  , "author": "David Liman"
+  , "repository": {
+      "type": "git",
+      "url": "http://github.com/dvliman/tenten.git"
+  }
+  , "main": "server.js"
+}

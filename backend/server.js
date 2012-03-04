@@ -1,5 +1,8 @@
 var restify = require('restify'); 
 
+var mongo = require('mongoose');
+var db = mongo.connect('mongodb://localhost/tenten')
+
 var server = restify.createServer({
   name: 'tenten', 
   version: '1.0.0'
