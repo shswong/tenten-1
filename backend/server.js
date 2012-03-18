@@ -12,6 +12,14 @@ server.use(restify.acceptParser(server.acceptable));
 server.use(restify.queryParser());
 server.use(restify.bodyParser());
 
+/** GET '/'
+ *   Return:
+ */
+server.get('/', function(req, res, next) {
+  res.send();
+  return next();
+});
+
 server.get('/echo/:name', function(req, res, next) {
   res.send({"name": "david liman", "email": "limanoit@gmail.com"});
   return next();
